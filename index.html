@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap" rel="stylesheet">
+    <title>DTF Diseño y Desarrollo</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- PRIMERA SECCION  -->
+    <section id="inicio">
+        <div class="contenedor">
+            <header>
+                <div class="contenedor-header">
+                    <h1>/DTF/</h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" onclick="seleecionar(this)">INICIO</a></li>
+                            <li><a href="#portfolio" onclick="seleecionar(this)">PORTAFOLIO</a></li>
+                            <li><a href="#tecnologias" onclick="seleecionar(this)">TECNOLOGIAS</a></li>                           
+                            <li><a href="#sobremi" onclick="seleecionar(this)">SOBRE MI</a></li>                            
+                            <li><a href="#contacto" onclick="seleecionar(this)">CONTACTO</a></li>
+                        </ul>
+                    </nav>
+
+                    <!-- Iconos Resposive -->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+            </header>
+            <div class="presentacion">
+                <p class="bienvenida">Bienvenidos</p>
+                <h2>Soy <span>Dylan Fernandez,</span> Futuro Desarrollador</h2>
+                <p class="descripcion">Un estudiante en continuo desarrollo </p>
+                <a href="Fernandez Dylan cv.pdf" download="Fernandez Dylan CV.pdf">Descargar CV</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEGUNDA SECCION  -->
+    <section id="portfolio">
+        <h3 class="titulo-seccion">MIS PROYECTOS</h3>
+            <div class="fila"> 
+                <div class="proyecto">
+                    <div class="overlay"></div>
+                    <img src="img/proyectos/proyecto1.png" alt="proyecto1">
+                    <div class="info">
+                        <h4>Megaflix</h4>
+                        <p>Proyecto para la Universidad, es una página donde se pueden ver peliculas y series</p>
+                        <div class="creado">
+                            <div class="botones">
+                                <a href="http://megaflix.netlify.app" target="_blank">Demo</a>
+                                <a href="https://github.com/DylanThomaas/Pagina-de-MEGAFLIX" target="_blank">Código</a>
+                            </div>
+                            <div>
+                                <img src="img/logos/html.svg" alt="html">
+                                <img src="img/logos/css.svg" alt="css">
+                                <img src="img/logos/javascript.svg" alt="javascript">
+                            </div>
+                        </div>
+                    </div>
+                </div>   
+                <div class="proyecto">
+                    <div class="overlay"></div>
+                    <img src="img/proyectos/proyecto2.jpg" alt="proyecto2">
+                    <div class="info">
+                        <h4>Flowing Exchange</h4>
+                        <p>Proyecto para la Universidad, página de economia colaborativa orientado a viajes</p>
+                        <div class="creado">
+                            <div class="botones">
+                                <a href="http://flowing-exchange.netlify.app" target="_blank">Demo</a>
+                                <a href="https://github.com/DylanThomaas/Flowing-Exchange" target="_blank">Código</a>
+                            </div>
+                            <div>
+                                <img src="img/logos/html.svg" alt="html">
+                                <img src="img/logos/css.svg" alt="css">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <div class="overlay"></div>
+                    <img src="img/proyectos/proyecto3.jpg" alt="proyecto3">
+                    <div class="info">
+                        <h4>Capacitación ABAP</h4>
+                        <p>Proyecto sobre un reporte ALV programado en ABAP SAP</p>
+                        <div class="creado">
+                            <div class="botones">
+                                <a href="https://github.com/DylanThomaas/Capacitacion-ABAP" target="_blank">Código</a>
+                            </div>
+                            <div>
+                                <img class="sap" src="img/logos/sap.png" alt="sap">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="fila"> 
+                <div class="proyecto">
+                    <div class="overlay"></div>
+                    <img src="img/proyectos/proyecto4.jpg" alt="proyecto4">
+                    <div class="info">
+                        <h4>Renovación Registro de Conducir</h4>
+                        <p>Proyecto para la Universidad, donde se resuelve una problematica social </p>
+                        <div class="creado">
+                            <div class="botones">
+                                <a href="https://renovacion-registro.netlify.app/" target="_blank">Demo</a>
+                                <a href="https://github.com/DylanThomaas/Renovacion-Registro" target="_blank">Código</a>
+                            </div>
+                            <div>
+                                <img src="img/logos/html.svg" alt="html">
+                                <img src="img/logos/css.svg" alt="css">
+                                <img src="img/logos/bootstrap.svg" alt="bootstrap">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <div class="overlay"></div>
+                    <img src="img/proyectos/proyecto5.png" alt="proyecto5">
+                    <div class="info">
+                        <h4>K2</h4>
+                        <p>Trabajo en conjunto con un colega, para una constructora</p>
+                        <div class="creado">
+                            <div class="botones">
+                                <a href="https://k2studio2.ga/" target="_blank">Demo</a>
+                            </div>
+                            <div>
+                                <img class="wordpress" src="img/logos/wordpress.svg" alt="wordpress" style="background-color: aliceblue;">
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="proyecto">  
+                    <div class="overlay"></div>
+                    <img src="img/proyectos/proyecto6.png" alt="proyecto6">
+                    <div class="info">
+                        <h4>Alvarez Marmolería Hrnos.</h4>
+                        <p>Trabajo web para una empresa marmolera en buenos aires</p>
+                        <div class="creado">
+                            <div class="botones">
+                                <a href="http://alvarezmarmoleria.com/index.html" target="_blank">Demo</a>
+                            </div>
+                            <div>
+                                <img class="wordpress" src="img/logos/wordpress.svg" alt="wordpress" style="background-color: aliceblue;">
+                            </div>
+                        </div>
+                </div>
+            </div>
+    </section>
+    
+    <!-- TERCERA SECCION  -->
+    <section id="tecnologias">
+        <h3 class="titulo-seccion">TECNOLOGIAS</h3>
+        <div class="contenedor-cartas">
+            <div class="cartas">
+                <div class="logo">
+                <img src="img/logos/html.svg" alt="html">
+                <img src="img/logos/css.svg" alt="css">
+                <img src="img/logos/javascript.svg" alt="javascript">
+                <img src="img/logos/bootstrap.svg" alt="bootstrap" class="bootstrap">
+                <img src="img/logos/mysql.svg" alt="mysql" class="sql">
+                <img src="img/logos/wordpress.svg" alt="wordpress" class="wordpress">
+                <img src="img/logos/github.svg" alt="github">
+                <img src="img/logos/git.svg" alt="git" >
+                <img src="img/logos/figma.svg" alt="figma" >
+                </div>
+            </div>
+        </div>
+        <h3 class="titulo-seccion">ACTUALMENTE APRENDIENDO </h3>
+        <div class="contenedor-cartas">
+            <div class="cartas">
+                <div class="logo">
+                <img src="img/logos/angular.svg" alt="angular">
+                <img src="img/logos/react.svg" alt="react">
+                <img src="img/logos/java.svg" alt="java" class="sql">
+                <img src="img/logos/python.svg" alt="python">   
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- CUARTA SECCION  -->
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="img/fotomia.jpg" alt="">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion"> Sobre Mi</p>
+            <h2>Hola, soy <span>Dylan Fernandez</span></h2>
+            <h3>Desarrollador Web</h3>
+            <p>Actualmente estoy estudiando la Tecnicatura en Pragramación y Desarrollo Web en la Universidad de La Matanza.</p>
+            <p>Estoy buscando mi primer trabajo en IT donde volcar mis conocimientos aprendidos. <br>También estoy desarrollando proyectos propios de formación contínua.</p> 
+            <p>Vibrando energía emprendedora, y enfocado en superar mis propios límites. <br>Dando siempre el máximo porque me gusta trabajar con compromiso y dedicación. </p>
+        </div>
+    </section>  
+    <footer id="contacto" class="footer" >
+        <p>Formas de contactos</p>
+            <div class="footer-div">
+            <a href="https://github.com/DylanThomaas"  target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/dylan-thomas-fernandez/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://wa.me/+5491169023101" target="_blank"><i class="fa-brands fa-whatsapp "></i></a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
