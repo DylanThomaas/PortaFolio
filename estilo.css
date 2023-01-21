@@ -86,7 +86,7 @@ html{
 }
 #inicio .contenedor .presentacion{
     max-width: 1100px;
-    height: 100vh;
+    height: 100vh; 
     margin: auto;
     color: var(--blanco-color);
     display: flex;
