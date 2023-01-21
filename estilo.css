@@ -71,6 +71,19 @@ html{
 #inicio .contenedor header .contenedor-header .redes a:hover{
     color: var(--letra-color);
 }
+.flags{
+  width: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.flags-items{
+  width: 30px;
+}
+.flags-img{
+  display: block;
+  cursor: pointer;
+}
 #inicio .contenedor .presentacion{
     max-width: 1100px;
     height: 100vh;
@@ -364,90 +377,87 @@ background-color: var(--letra-color);
   #icono-nav{
     display: block;
   }
-#inicio .contenedor .presentacion .bienvenida{
+  #inicio .contenedor .presentacion .bienvenida{
+      font-size: 16px;
+      letter-spacing: 3px;
+  }
+  #inicio .contenedor .presentacion h2{
+    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline
+  }
+  #inicio .contenedor .presentacion h2 span{
+    font-size: 25px;
+  }
+
+  #inicio .contenedor .presentacion .descripcion{
     font-size: 16px;
-    letter-spacing: 3px;
-}
-#inicio .contenedor .presentacion h2{
-  font-size: 20px;
-  display: flex;
+    margin: 0;
+  }
+  #inicio .contenedor .presentacion a {
+    margin: 20px;
+    padding: 10px 17px;
+    font-size: 16px;
+  }
+  #inicio .contenedor header .contenedor-header nav ul{
+    flex-direction: column;
+  }
+  #inicio .contenedor header .contenedor-header .seleccionado{
+    color: var(--letra-color);
+  }
+  #portfolio{
+    padding: 50px;
+  }
+  #portfolio .titulo-seccion {
+    font-size: 17px;
+  }
+  #portfolio .fila {
   flex-wrap: wrap;
+  margin-top: 10px;
+  margin-bottom: 0;
   justify-content: center;
-  align-items: baseline
+  }
+  #portfolio .fila .proyecto{
+  margin: 3px;
+  max-width: 300px;
+  }
+  #portfolio .fila .proyecto .info{
+    opacity: 1;
+    bottom: 0;
+  }
+  #portfolio .fila .proyecto img{
+    filter: grayscale(0);
+  }
+  #tecnologias .titulo-seccion{
+    font-size: 17px;
+  }
+  #tecnologias .contenedor-cartas .cartas .logo{
+    flex-wrap: wrap;
+    margin: 1rem;
+  }
+  #tecnologias .contenedor-cartas .cartas .logo img{
+    filter: grayscale(0);
+    height: 3.5rem;
+  }
+  #sobremi{
+    padding: 50px 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column-reverse
+  }
+  #sobremi .sobremi {
+    text-align: center;
+  }
+  #sobremi .sobremi .titulo-seccion{
+    font-size: 17px;
+  }
+  #sobremi .sobremi h2{
+    font-size: 22px;
+  }
+  #sobremi .contenedor-foto{
+    margin: auto;
+    max-width: 200px;
+  }
 }
-#inicio .contenedor .presentacion h2 span{
-  font-size: 25px;
-}
-
-#inicio .contenedor .presentacion .descripcion{
-  font-size: 16px;
-  margin: 0;
-}
-#inicio .contenedor .presentacion a {
-  margin: 20px;
-  padding: 10px 17px;
-  font-size: 16px;
-}
-#inicio .contenedor header .contenedor-header nav ul{
-  flex-direction: column;
-}
-#inicio .contenedor header .contenedor-header .seleccionado{
-  color: var(--letra-color);
-}
-#portfolio{
-  padding: 50px;
-}
-#portfolio .titulo-seccion {
-  font-size: 17px;
-}
-#portfolio .fila {
-flex-wrap: wrap;
-margin-top: 10px;
-margin-bottom: 0;
-justify-content: center;
-}
-#portfolio .fila .proyecto{
-margin: 3px;
-max-width: 300px;
-}
-#portfolio .fila .proyecto .info{
-  opacity: 1;
-  bottom: 0;
-}
-#portfolio .fila .proyecto img{
-  filter: grayscale(0);
-}
-#tecnologias .titulo-seccion{
-  font-size: 17px;
-}
-#tecnologias .contenedor-cartas .cartas .logo{
-  flex-wrap: wrap;
-  margin: 1rem;
-}
-#tecnologias .contenedor-cartas .cartas .logo img{
-  filter: grayscale(0);
-  height: 3.5rem;
-}
-#sobremi{
-  padding: 50px 0;
-  flex-wrap: wrap;
-  justify-content: center;
-  flex-direction: column-reverse
-}
-#sobremi .sobremi {
-  text-align: center;
-}
-#sobremi .sobremi .titulo-seccion{
-  font-size: 17px;
-}
-#sobremi .sobremi h2{
-  font-size: 22px;
-}
-#sobremi .contenedor-foto{
-  margin: auto;
-  max-width: 200px;
-}
-
-}
-
-

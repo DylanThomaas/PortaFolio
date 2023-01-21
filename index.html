@@ -28,7 +28,14 @@
                             <li><a href="#contacto" onclick="seleecionar(this)">CONTACTO</a></li>
                         </ul>
                     </nav>
-
+                    <div id="flags" class="flags">
+                        <div class="flags-items" data-language="es">   
+                            <img class="flags-img" src="/img/banderas/es.svg" alt="flagsES">
+                        </div>
+                        <div class="flags-items" data-language="us">   
+                            <img class="flags-img" src="/img/banderas/us.svg" alt="flagsUS">
+                        </div>
+                    </div>
                     <!-- Iconos Resposive -->
                     <div id="icono-nav" onclick="responsiveMenu()">
                         <i class="fa-solid fa-bars"></i>
@@ -36,10 +43,10 @@
                 </div>
             </header>
             <div class="presentacion">
-                <p class="bienvenida">Bienvenidos</p>
-                <h2>Soy <span>Dylan Fernandez,</span> Futuro Desarrollador</h2>
-                <p class="descripcion">Un estudiante en continuo desarrollo </p>
-                <a href="Fernandez Dylan cv.pdf" download="Fernandez Dylan CV.pdf">Descargar CV</a>
+                <p class="bienvenida" data-section="index" data-value="welcome">Bienvenidos</p>
+                <h2 data-section="index" data-value="rol">Soy <span>Dylan Fernandez,</span> Futuro Desarrollador</h2>
+                <p class="descripcion" data-section="index" data-value="description">Un estudiante en continuo desarrollo </p>
+                <a href="Fernandez Dylan cv.pdf" download="Fernandez Dylan CV.pdf" data-section="index" data-value="download">Descargar CV</a>
             </div>
         </div>
     </section>
@@ -52,8 +59,8 @@
                     <div class="overlay"></div>
                     <img src="img/proyectos/proyecto1.png" alt="proyecto1">
                     <div class="info">
-                        <h4>Megaflix</h4>
-                        <p>Proyecto para la Universidad, es una página donde se pueden ver peliculas y series</p>
+                        <h4 data-section="projects" data-value="first-project-tittle">Megaflix</h4>
+                        <p data-section="projects" data-value="first-project-description">Proyecto para la Universidad, es una página donde se pueden ver peliculas y series</p>
                         <div class="creado">
                             <div class="botones">
                                 <a href="http://megaflix.netlify.app" target="_blank">Demo</a>
@@ -71,8 +78,8 @@
                     <div class="overlay"></div>
                     <img src="img/proyectos/proyecto2.jpg" alt="proyecto2">
                     <div class="info">
-                        <h4>Flowing Exchange</h4>
-                        <p>Proyecto para la Universidad, página de economia colaborativa orientado a viajes</p>
+                        <h4 data-section="projects" data-value="second-project-tittle">Flowing Exchange</h4>
+                        <p data-section="projects" data-value="second-project-description">Proyecto para la Universidad, página de economia colaborativa orientado a viajes</p>
                         <div class="creado">
                             <div class="botones">
                                 <a href="http://flowing-exchange.netlify.app" target="_blank">Demo</a>
@@ -89,8 +96,8 @@
                     <div class="overlay"></div>
                     <img src="img/proyectos/proyecto3.jpg" alt="proyecto3">
                     <div class="info">
-                        <h4>Capacitación ABAP</h4>
-                        <p>Proyecto sobre un reporte ALV programado en ABAP SAP</p>
+                        <h4 data-section="projects" data-value="third-project-tittle">Capacitación ABAP</h4>
+                        <p data-section="projects" data-value="third-project-description"> Proyecto sobre un reporte ALV programado en ABAP SAP</p>
                         <div class="creado">
                             <div class="botones">
                                 <a href="https://github.com/DylanThomaas/Capacitacion-ABAP" target="_blank">Código</a>
@@ -108,8 +115,8 @@
                     <div class="overlay"></div>
                     <img src="img/proyectos/proyecto4.jpg" alt="proyecto4">
                     <div class="info">
-                        <h4>Renovación Registro de Conducir</h4>
-                        <p>Proyecto para la Universidad, donde se resuelve una problematica social </p>
+                        <h4 data-section="projects" data-value="fourth-project-tittle">Renovación Registro de Conducir</h4>
+                        <p data-section="projects" data-value="fourth-project-description">Proyecto para la Universidad, donde se resuelve una problematica social </p>
                         <div class="creado">
                             <div class="botones">
                                 <a href="https://renovacion-registro.netlify.app/" target="_blank">Demo</a>
@@ -127,8 +134,8 @@
                     <div class="overlay"></div>
                     <img src="img/proyectos/proyecto5.png" alt="proyecto5">
                     <div class="info">
-                        <h4>K2</h4>
-                        <p>Trabajo en conjunto con un colega, para una constructora</p>
+                        <h4 data-section="projects" data-value="fifth-project-tittle">K2</h4>
+                        <p data-section="projects" data-value="fifth-project-description">Trabajo en conjunto con un colega, para una constructora</p>
                         <div class="creado">
                             <div class="botones">
                                 <a href="https://k2studio2.ga/" target="_blank">Demo</a>
@@ -143,8 +150,8 @@
                     <div class="overlay"></div>
                     <img src="img/proyectos/proyecto6.png" alt="proyecto6">
                     <div class="info">
-                        <h4>Alvarez Marmolería Hrnos.</h4>
-                        <p>Trabajo web para una empresa marmolera en buenos aires</p>
+                        <h4 data-section="projects" data-value="sixth-project-tittle">Alvarez Marmolería Hrnos.</h4>
+                        <p data-section="projects" data-value="sixth-project-description">Trabajo web para una empresa marmolera en buenos aires</p>
                         <div class="creado">
                             <div class="botones">
                                 <a href="http://alvarezmarmoleria.com/index.html" target="_blank">Demo</a>
@@ -193,16 +200,17 @@
             <img src="img/fotomia2.jpg" alt="">
         </div>
         <div class="sobremi">
-            <p class="titulo-seccion"> Sobre Mi</p>
-            <h2>Hola, soy <span>Dylan Fernandez</span></h2>
-            <h3>Desarrollador Web</h3>
-            <p>Actualmente estoy estudiando la Tecnicatura en Pragramación y Desarrollo Web en la Universidad de La Matanza.</p>
-            <p>Estoy buscando mi primer trabajo en IT donde volcar mis conocimientos aprendidos. <br>También estoy desarrollando proyectos propios de formación contínua.</p> 
-            <p>Vibrando energía emprendedora, y enfocado en superar mis propios límites. <br>Dando siempre el máximo porque me gusta trabajar con compromiso y dedicación. </p>
+            <p class="titulo-seccion" data-section="profile" data-value="about-me"> Sobre Mi</p>
+            <h2 data-section="profile" data-value="name" >Hola, mi nombre es <span> <br>
+                Dylan Fernandez</span></h2>
+            <h3 data-section="profile" data-value="rol">Desarrollador Web</h3>
+            <p data-section="profile" data-value="description-1">Actualmente estoy estudiando la Tecnicatura en Pragramación y Desarrollo Web en la Universidad de La Matanza.</p>
+            <p data-section="profile" data-value="description-2">Estoy buscando mi primer trabajo en IT donde volcar mis conocimientos aprendidos. <br>También estoy desarrollando proyectos propios de formación contínua.</p> 
+            <p data-section="profile" data-value="description-3">Vibrando energía emprendedora, y enfocado en superar mis propios límites. <br>Dando siempre el máximo porque me gusta trabajar con compromiso y dedicación. </p>
         </div>
     </section>  
     <footer id="contacto" class="footer" >
-        <p>Formas de contactos</p>
+        <p data-section="footer" data-value="contact">Formas de contactos</p>
             <div class="footer-div">
             <a href="https://github.com/DylanThomaas"  target="_blank"><i class="fa-brands fa-github"></i></a>
             <a href="https://www.linkedin.com/in/dylan-thomas-fernandez/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
