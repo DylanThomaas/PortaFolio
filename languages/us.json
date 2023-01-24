@@ -1,4 +1,11 @@
 {
+    "header":{
+        "beginning":"BEGGINNIG",
+        "portfolio":"PORFOLIO",
+        "technologies":"TECHNOLOGIES",
+        "about-me":"ABOUT ME",
+        "contact":"CONTACT"
+    },
     "index":{
         "welcome": "welcome",
         "rol": "I'm <span> Dylan Fernandez, </span> Future Developer",
@@ -6,18 +13,24 @@
         "download": "Download CV"
     },
     "projects":{
-        "first-project-tittle": "Megaflix",
-        "first-project-description": "Project for the University, is a page where you can watch movies and series.",
-        "second-project-tittle": "Flowing Exchange",
-        "second-project-description": "University project, travel oriented collaborative economy website.",
+        "projects":"My projects",
+        "first-project-tittle": "Megaflix (University project)",
+        "first-project-description": "It's a page where you can watch movies and series.",
+        "second-project-tittle": "Flowing Exchange (University project)",
+        "second-project-description": "Website travel oriented collaborative economy.",
         "third-project-tittle": "Training ABAP",
         "third-project-description": "Project on an ALV report programmed in ABAP SAP",
-        "fourth-project-tittle": "Driving License Renewal",
-        "fourth-project-description": "Project for the University, where a social problem is solved.",
+        "fourth-project-tittle": "Driving License Renewal (University project)",
+        "fourth-project-description": "Project where a social problem is solved.",
         "fifth-project-tittle": "K2",
         "fifth-project-description": "Working with a colleague for a construction company.",
         "sixth-project-tittle": "Alvarez Marmolería Hrnos.",
         "sixth-project-description": "Web work for a marble company in buenos aires"
+    },
+    "technologies":{
+        "technologies":"Technologies",
+        "tools":"Tools",
+        "learning":"Currently Learning"
     },
     "profile":{
         "about-me": "ABOUT ME",
@@ -28,6 +41,6 @@
         "description-3": "Vibrating entrepreneurial energy, and focused on overcoming my own limits.<br> Always giving my best because I like to work with commitment and dedication."
     },
     "footer":{
-        "contact": "How to contact"
+        "contact": "Contact to me"
     }
 }

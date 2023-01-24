@@ -1,4 +1,11 @@
 {
+    "header":{
+        "beginning":"INICIO",
+        "portfolio":"PORTAFOLIO",
+        "technologies":"TECNOLOGIAS",
+        "about-me":"SOBRE MI",
+        "contact":"CONTACTO"
+    },
     "index":{
         "welcome": "bienvenidos",
         "rol": "Soy <span> Dylan Fernandez,</span> Futuro Desarrollador",
@@ -6,21 +13,27 @@
         "download": "Descargar CV"
     },
     "projects":{
-        "first-project-tittle": "Megaflix",
-        "first-project-description": "Proyecto para la Universidad, es una página donde se pueden ver peliculas y series",
-        "second-project-tittle": "Flowing Exchange",
-        "second-project-description": "Proyecto para la Universidad, página de economia colaborativa orientado a viajes",
+        "projects":"Mis proyectos",
+        "first-project-tittle": "Megaflix (Proyecto Universitario)",
+        "first-project-description": "Es una página donde se pueden ver peliculas y series",
+        "second-project-tittle": "Flowing Exchange (Proyecto Universitario)",
+        "second-project-description": "Página Web de economia colaborativa orientado a viajes",
         "third-project-tittle": "Capacitación ABAP",
         "third-project-description": "Proyecto sobre un reporte ALV programado en ABAP SAP",
-        "fourth-project-tittle": "Renovación Registro de Conducir",
-        "fourth-project-description": "Proyecto para la Universidad, donde se resuelve una problematica social",
+        "fourth-project-tittle": "Renovación Registro de Conducir (Proyecto Universitario)",
+        "fourth-project-description": "Proyecto donde se resuelve una problematica social",
         "fifth-project-tittle": "K2",
         "fifth-project-description": "Trabajo en conjunto con un colega, para una constructora",
         "sixth-project-tittle": "Alvarez Marmolería Hrnos.",
         "sixth-project-description": "Trabajo web para una empresa marmolera en buenos aires"
     },
+    "technologies":{
+        "technologies":"Tecnologías",
+        "tools":"Herramientas",
+        "learning":"Actualmente aprendiendo"
+    },
     "profile":{
-        "about-me": "SOBRE MI",
+        "about-me": "Sobre mi",
         "name": "Hola, mi nombre es <span> <br> Dylan Fernandez</span>",
         "rol": "DESARROLLADOR WEB",
         "description-1": "Actualmente estoy estudiando la Tecnicatura en Pragramación y Desarrollo Web en la Universidad de La Matanza.",

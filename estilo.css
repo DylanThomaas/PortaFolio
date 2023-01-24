@@ -83,6 +83,7 @@ html{
 .flags-img{
   display: block;
   cursor: pointer;
+  border-radius: 5px;
 }
 #inicio .contenedor .presentacion{
     max-width: 1100px;
