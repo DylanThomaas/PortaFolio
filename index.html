@@ -17,8 +17,8 @@
     <section class="index">
         <div class="index__container">
             <header>
-                <div class="header_container">
-                    <h1 class="header_container--h1">/DTF/</h1>
+                <div class="header__container">
+                    <h1 class="header__container--h1">/DTF/</h1>
                     <nav id="nav" class="">
                         <ul id="links">
                             <li><a href="#inicio" onclick="selection(this)" data-section="header" data-value="beginning">INICIO</a></li>
@@ -30,14 +30,14 @@
                     </nav>
                     <div id="flags" class="flags">
                         <div class="flags-items" data-language="ar">   
-                            <img class="flags-img" src="/img/banderas/ar.svg" alt="flagsES">
+                            <img class="flags-img" src="/img/banderas/ar.svg" alt="flagsAR">
                         </div>
                         <div class="flags-items" data-language="us">   
                             <img class="flags-img" src="/img/banderas/us.svg" alt="flagsUS">
                         </div>
                     </div>
                     <!-- Iconos Resposive -->
-                    <div id="icono-nav" onclick="responsiveMenu()">
+                    <div class="icono__nav" id="iconoNav">
                         <i class="fa-solid fa-bars"></i>
                     </div>
                 </div>
@@ -46,7 +46,7 @@
                 <p class="bienvenida" data-section="index" data-value="welcome">Bienvenidos</p>
                 <h2 data-section="index" data-value="rol">Soy <span>Dylan Fernandez,</span> Futuro Desarrollador</h2>
                 <p class="descripcion" data-section="index" data-value="description">Un estudiante en continuo desarrollo </p>
-                <a href="Fernandez Dylan cv.pdf" download="Fernandez Dylan CV.pdf" data-section="index" data-value="download">Descargar CV</a>
+                <a id="download" href="./download/Fernandez Dylan cv.pdf" download="Fernandez Dylan CV.pdf" data-section="index" data-value="download">Descargar CV</a>
             </div>
         </div>
     </section>

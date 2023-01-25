@@ -32,7 +32,7 @@ header{
     z-index: 100;
     top: 0;
 }
-.header_container{
+.header__container{
     max-width: 1100px;
     margin: auto;
     display: flex;
@@ -40,23 +40,23 @@ header{
     align-items: center;
     padding: 10px 20px;
 }
-.header_container--h1{
+.header__container--h1{
     text-align: center;
     color: var(--letra-color);
 }
-.header_container nav ul{
+.header__container nav ul{
     list-style: none;
     display: flex;
     align-items: center;
 }
-.header_container nav ul li a{
+.header__container nav ul li a{
     text-decoration: none;
     color: var(--blanco-color);
     margin: 0 12px;
     font-weight: 400;
     transition: .5s;
 }
-.header_container nav ul a:hover{
+.header__container nav ul a:hover{
     color: var(--letra-color);
 }
 
@@ -124,7 +124,7 @@ header{
     border: 2px solid black;
 }
 
-.icono-nav{
+.icono__nav{
     color: var(--blanco-color);
     display: none ;
 }
@@ -365,7 +365,7 @@ background-color: var(--letra-color);
     margin: 5px 0;
     transition: 0.5s;
   }
-  #icono-nav{
+  .icono__nav{
     display: block;
   }
   .index .index__container .presentacion .bienvenida{
@@ -392,13 +392,13 @@ background-color: var(--letra-color);
     padding: 10px 17px;
     font-size: 16px;
   }
-  .index .index__container header .index__container--header nav ul{
+  .header__container nav ul{
     flex-direction: column;
   }
-  .index .index__container header .index__container--header h1{
+  .header__container h1{
     font-size: 17px;
 }
-  .index .index__container header .index__container--header .seleccionado{
+  .header__container .seleccionado{
     color: var(--letra-color);
   }
   #portfolio{
