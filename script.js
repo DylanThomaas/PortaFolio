@@ -9,18 +9,19 @@ function responsiveMenu(){
 }
 
 //funcion que desaparece el menu al seleccionar
-function seleccionar(link){
-    var opciones = document.querySelectorAll('#links a');
-    opciones[0].className = "";
-    opciones[1].className = "";
-    opciones[2].className = "";
-    opciones[3].className = "";
-    opciones[4].className = "";
-    opciones[5].className = "";
+function selection(link){
+    var options = document.querySelectorAll('#links a');
+    options[0].className = "";
+    options[1].className = "";
+    options[2].className = "";
+    options[3].className = "";
+    options[4].className = "";
     link.className = "seleccionado";
 
-    var x= document.getElementById("nav");
-    x.className = "";
+    var x = document.getElementById("nav");
+    if(x.className === "responsive"){
+        x.className = "";
+    }
 }
 
 //Funcion para cambiar de idioma

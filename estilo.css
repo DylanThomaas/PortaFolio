@@ -351,6 +351,7 @@ background-color: var(--letra-color);
 }
 /* MEDIAQUERY*/
 @media screen and (max-width: 800px) {
+
   .redes{
   display: none;
   }
@@ -362,12 +363,12 @@ background-color: var(--letra-color);
     background-color: rgba(0,0,0,.8);
     width: 100%;
     position: absolute;
-    top: 48px;
+    top: 43px;
     left: 0;
     padding: 10px 0;
   }
   nav .responsive ul{
-    display: block !important;
+    display: block;
     text-align: center;
     transition: 0.5s;
   }
@@ -405,6 +406,9 @@ background-color: var(--letra-color);
   #inicio .contenedor header .contenedor-header nav ul{
     flex-direction: column;
   }
+  #inicio .contenedor header .contenedor-header h1{
+    font-size: 17px;
+}
   #inicio .contenedor header .contenedor-header .seleccionado{
     color: var(--letra-color);
   }
