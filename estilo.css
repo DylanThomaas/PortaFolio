@@ -19,20 +19,20 @@
 html{
     scroll-behavior: smooth;
 }
-#inicio{
+.index{
     background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url("img/fondo/fondo1.jpg");
     background-size: cover;
     background-position: center ;
     height: 100%;
 }
-#inicio .contenedor header{
+header{
     background-color: rgba(0,0,0,.8);
     position: fixed;
     width: 100%;
     z-index: 100;
     top: 0;
 }
-#inicio .contenedor header .contenedor-header{
+.header_container{
     max-width: 1100px;
     margin: auto;
     display: flex;
@@ -40,37 +40,26 @@ html{
     align-items: center;
     padding: 10px 20px;
 }
-#inicio .contenedor header .contenedor-header h1{
+.header_container--h1{
     text-align: center;
     color: var(--letra-color);
 }
-#inicio .contenedor header .contenedor-header nav ul{
+.header_container nav ul{
     list-style: none;
     display: flex;
     align-items: center;
 }
-#inicio .contenedor header .contenedor-header nav ul li a{
+.header_container nav ul li a{
     text-decoration: none;
     color: var(--blanco-color);
     margin: 0 12px;
     font-weight: 400;
     transition: .5s;
 }
-#inicio .contenedor header .contenedor-header nav ul a:hover{
+.header_container nav ul a:hover{
     color: var(--letra-color);
 }
-#inicio .contenedor header .contenedor-header .redes a{
-    text-decoration: none;
-    color: var(--blanco-color);
-    display: inline-block;
-    margin-left: 10px;
-    transition: .5s;
-    display: flex;
-    align-items: center
-}
-#inicio .contenedor header .contenedor-header .redes a:hover{
-    color: var(--letra-color);
-}
+
 .flags{
   width: 75px;
   display: flex;
@@ -85,7 +74,7 @@ html{
   cursor: pointer;
   border-radius: 5px;
 }
-#inicio .contenedor .presentacion{
+.index .index__container .presentacion{
     max-width: 1100px;
     height: 100vh; 
     margin: auto;
@@ -95,30 +84,30 @@ html{
     align-items: center;
     justify-content: center;
 }
-#inicio .contenedor .presentacion .bienvenida{
+.index .index__container .presentacion .bienvenida{
   font-size: 16px;
   margin-bottom: 20px;
   text-transform: uppercase;
   letter-spacing: 5px;
 }
-#inicio .contenedor .presentacion h2{
+.index .index__container .presentacion h2{
   font-size: 40px;
   margin-bottom: 25px;
   text-align: center;
 }
-#inicio .contenedor .presentacion h2 span{
+.index .index__container .presentacion h2 span{
   font-size: 50px;
   color: var(--letra-color);
 }
 
-#inicio .contenedor .presentacion .descripcion{
+.index .index__container .presentacion .descripcion{
   max-width: 700px;
   margin: 25px auto;
   font-size: 25px;
   text-align: center;
 }
 
-#inicio .contenedor .presentacion a {
+.index .index__container .presentacion a {
     text-decoration: none;
     display: inline-block;
     margin: 25px;
@@ -130,12 +119,12 @@ html{
     text-transform: uppercase;
     transition: .5s;
 }
-#inicio .contenedor .presentacion a:hover {
+.index .index__container .presentacion a:hover {
     background-color: var(--naranja-oscuro);
     border: 2px solid black;
 }
 
-#icono-nav{
+.icono-nav{
     color: var(--blanco-color);
     display: none ;
 }
@@ -379,37 +368,37 @@ background-color: var(--letra-color);
   #icono-nav{
     display: block;
   }
-  #inicio .contenedor .presentacion .bienvenida{
+  .index .index__container .presentacion .bienvenida{
       font-size: 16px;
       letter-spacing: 3px;
   }
-  #inicio .contenedor .presentacion h2{
+  .index .index__container .presentacion h2{
     font-size: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: baseline
   }
-  #inicio .contenedor .presentacion h2 span{
+  .index .index__container .presentacion h2 span{
     font-size: 25px;
   }
 
-  #inicio .contenedor .presentacion .descripcion{
+  .index .index__container .presentacion .descripcion{
     font-size: 16px;
     margin: 0;
   }
-  #inicio .contenedor .presentacion a {
+  .index .index__container .presentacion a {
     margin: 20px;
     padding: 10px 17px;
     font-size: 16px;
   }
-  #inicio .contenedor header .contenedor-header nav ul{
+  .index .index__container header .index__container--header nav ul{
     flex-direction: column;
   }
-  #inicio .contenedor header .contenedor-header h1{
+  .index .index__container header .index__container--header h1{
     font-size: 17px;
 }
-  #inicio .contenedor header .contenedor-header .seleccionado{
+  .index .index__container header .index__container--header .seleccionado{
     color: var(--letra-color);
   }
   #portfolio{
