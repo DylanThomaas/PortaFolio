@@ -43,121 +43,114 @@
                 </div>
             </header>
             <div class="presentacion" id="inicio">
-                <p class="bienvenida" data-section="index" data-value="welcome">Bienvenidos</p>
+                <p class="presentacion__bienvenida" data-section="index" data-value="welcome">Bienvenidos</p>
                 <h2 data-section="index" data-value="rol">Soy <span>Dylan Fernandez,</span> Futuro Desarrollador</h2>
-                <p class="descripcion" data-section="index" data-value="description">Un estudiante en continuo desarrollo </p>
-                <a id="download" href="./download/Fernandez Dylan cv.pdf" download="Fernandez Dylan CV.pdf" data-section="index" data-value="download">Descargar CV</a>
+                <p class="presentacion__descripcion" data-section="index" data-value="description">Un estudiante en continuo desarrollo </p>
+                <a class="presentacion__a" id="download" href="./download/Fernandez Dylan cv.pdf" download="Fernandez Dylan CV.pdf" data-section="index" data-value="download">Descargar CV</a>
             </div>
         </div>
     </section>
 
     <!-- SEGUNDA SECCION  -->
-    <section id="portfolio">
-        <h3 class="titulo-seccion" data-section="projects" data-value="projects">MIS PROYECTOS</h3>
-            <div class="fila"> 
-                <div class="proyecto">
-                    <div class="overlay"></div>
-                    <img src="img/proyectos/proyecto1.png" alt="proyecto1">
-                    <div class="info">
+    <section class="portafolio" id="portfolio">
+            <h3 class="titulo__seccion" data-section="projects" data-value="projects">MIS PROYECTOS</h3>
+            <div class="portafolio__fila"> 
+                <div class="portafolio__proyecto">
+                    <img class="proyecto__img" src="img/proyectos/proyecto1.png" alt="proyecto1">
+                    <div class="proyecto__info">
                         <h4 data-section="projects" data-value="first-project-tittle">Megaflix</h4>
                         <p data-section="projects" data-value="first-project-description">Proyecto para la Universidad, es una página donde se pueden ver peliculas y series</p>
-                        <div class="creado">
-                            <div class="botones">
-                                <a href="http://megaflix.netlify.app" target="_blank">Demo</a>
-                                <a href="https://github.com/DylanThomaas/Pagina-de-MEGAFLIX" target="_blank">Código</a>
+                        <div class="info__creado">
+                            <div class="info__botones">
+                                <a class="info__a" href="http://megaflix.netlify.app" target="_blank">Demo</a>
+                                <a class="info__a" href="https://github.com/DylanThomaas/Pagina-de-MEGAFLIX" target="_blank">Código</a>
                             </div>
                             <div>
-                                <img src="img/logos/html.svg" alt="html">
-                                <img src="img/logos/css.svg" alt="css">
-                                <img src="img/logos/javascript.svg" alt="javascript">
+                                <img class="info__img" src="img/logos/html.svg" alt="html">
+                                <img class="info__img" src="img/logos/css.svg" alt="css">
+                                <img class="info__img" src="img/logos/javascript.svg" alt="javascript">
                             </div>
                         </div>
                     </div>
                 </div>   
-                <div class="proyecto">
-                    <div class="overlay"></div>
-                    <img src="img/proyectos/proyecto2.jpg" alt="proyecto2">
-                    <div class="info">
+                <div class="portafolio__proyecto">
+                    <img class="proyecto__img" src="img/proyectos/proyecto2.jpg" alt="proyecto2">
+                    <div class="proyecto__info">
                         <h4 data-section="projects" data-value="second-project-tittle">Flowing Exchange</h4>
                         <p data-section="projects" data-value="second-project-description">Proyecto para la Universidad, página de economia colaborativa orientado a viajes</p>
-                        <div class="creado">
-                            <div class="botones">
-                                <a href="http://flowing-exchange.netlify.app" target="_blank">Demo</a>
-                                <a href="https://github.com/DylanThomaas/Flowing-Exchange" target="_blank">Código</a>
+                        <div class="info__creado">
+                            <div class="info__botones">
+                                <a class="info__a" href="http://flowing-exchange.netlify.app" target="_blank">Demo</a>
+                                <a class="info__a" href="https://github.com/DylanThomaas/Flowing-Exchange" target="_blank">Código</a>
                             </div>
                             <div>
-                                <img src="img/logos/html.svg" alt="html">
-                                <img src="img/logos/css.svg" alt="css">
+                                <img class="info__img" src="img/logos/html.svg" alt="html">
+                                <img class="info__img" src="img/logos/css.svg" alt="css">
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="proyecto">
-                    <div class="overlay"></div>
-                    <img src="img/proyectos/proyecto3.jpg" alt="proyecto3">
-                    <div class="info">
+                <div class="portafolio__proyecto">
+                    <img class="proyecto__img" src="img/proyectos/proyecto3.jpg" alt="proyecto3">
+                    <div class="proyecto__info">
                         <h4 data-section="projects" data-value="third-project-tittle">Capacitación ABAP</h4>
                         <p data-section="projects" data-value="third-project-description"> Proyecto sobre un reporte ALV programado en ABAP SAP</p>
-                        <div class="creado">
-                            <div class="botones">
-                                <a href="https://github.com/DylanThomaas/Capacitacion-ABAP" target="_blank">Código</a>
+                        <div class="info__creado">
+                            <div class="info__botones">
+                                <a class="info__a" href="https://github.com/DylanThomaas/Capacitacion-ABAP" target="_blank">Código</a>
                             </div>
                             <div>
-                                <img class="sap" src="img/logos/sap.png" alt="sap">
-                                
+                                <img class="info__img--sap" src="img/logos/sap.png" alt="sap">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="fila"> 
-                <div class="proyecto">
-                    <div class="overlay"></div>
-                    <img src="img/proyectos/proyecto4.jpg" alt="proyecto4">
-                    <div class="info">
+            <div class="portafolio__fila"> 
+                <div class="portafolio__proyecto">
+                    <img class="proyecto__img" src="img/proyectos/proyecto4.jpg" alt="proyecto4">
+                    <div class="proyecto__info">
                         <h4 data-section="projects" data-value="fourth-project-tittle">Renovación Registro de Conducir</h4>
                         <p data-section="projects" data-value="fourth-project-description">Proyecto para la Universidad, donde se resuelve una problematica social </p>
-                        <div class="creado">
-                            <div class="botones">
-                                <a href="https://renovacion-registro.netlify.app/" target="_blank">Demo</a>
-                                <a href="https://github.com/DylanThomaas/Renovacion-Registro" target="_blank">Código</a>
+                        <div class="info__creado">
+                            <div class="info__botones">
+                                <a class="info__a" href="https://renovacion-registro.netlify.app/" target="_blank">Demo</a>
+                                <a class="info__a" href="https://github.com/DylanThomaas/Renovacion-Registro" target="_blank">Código</a>
                             </div>
                             <div>
-                                <img src="img/logos/html.svg" alt="html">
-                                <img src="img/logos/css.svg" alt="css">
-                                <img src="img/logos/bootstrap.svg" alt="bootstrap">
+                                <img class="info__img" src="img/logos/html.svg" alt="html">
+                                <img class="info__img" src="img/logos/css.svg" alt="css">
+                                <img class="info__img" src="img/logos/bootstrap.svg" alt="bootstrap">
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="proyecto">
-                    <div class="overlay"></div>
-                    <img src="img/proyectos/proyecto5.png" alt="proyecto5">
-                    <div class="info">
+                <div class="portafolio__proyecto">
+                    <img class="proyecto__img" src="img/proyectos/proyecto5.png" alt="proyecto5">
+                    <div class="proyecto__info">
                         <h4 data-section="projects" data-value="fifth-project-tittle">K2</h4>
                         <p data-section="projects" data-value="fifth-project-description">Trabajo en conjunto con un colega, para una constructora</p>
-                        <div class="creado">
-                            <div class="botones">
-                                <a href="https://k2studio2.ga/" target="_blank">Demo</a>
+                        <div class="info__creado">
+                            <div class="info__botones">
+                                <a class="info__a" href="https://k2studio2.ga/" target="_blank">Demo</a>
                             </div>
                             <div>
-                                <img class="wordpress" src="img/logos/wordpress.svg" alt="wordpress" style="background-color: aliceblue;">
+                                <img class="info__img--wordpress" src="img/logos/wordpress.svg" alt="wordpress" style="background-color: aliceblue;">
                             </div>
                         </div>
                     </div>
                 </div> 
-                <div class="proyecto">  
-                    <div class="overlay"></div>
-                    <img src="img/proyectos/proyecto6.png" alt="proyecto6">
-                    <div class="info">
+                <div class="portafolio__proyecto"> 
+                    <img class="proyecto__img" src="img/proyectos/proyecto6.png" alt="proyecto6">
+                    <div class="proyecto__info">
                         <h4 data-section="projects" data-value="sixth-project-tittle">Alvarez Marmolería Hrnos.</h4>
                         <p data-section="projects" data-value="sixth-project-description">Trabajo web para una empresa marmolera en buenos aires</p>
-                        <div class="creado">
-                            <div class="botones">
-                                <a href="http://alvarezmarmoleria.com/index.html" target="_blank">Demo</a>
+                        <div class="info__creado">
+                            <div class="info__botones">
+                                <a class="info__a" href="http://alvarezmarmoleria.com/index.html" target="_blank">Demo</a>
                             </div>
                             <div>
-                                <img class="wordpress" src="img/logos/wordpress.svg" alt="wordpress" style="background-color: aliceblue;">
+                                <img class="info__img--wordpress" src="img/logos/wordpress.svg" alt="wordpress" style="background-color: aliceblue;">
                             </div>
                         </div>
                 </div>
@@ -167,8 +160,7 @@
     <!-- TERCERA SECCION  -->
     <section id="tecnologias">
         <div>
-
-            <h3 class="titulo-seccion" data-section="technologies" data-value="technologies">TECNOLOGIAS</h3>
+            <h3 class="titulo__seccion" data-section="technologies" data-value="technologies">TECNOLOGIAS</h3>
             <div class="contenedor-cartas">
                 <div class="cartas">
                     <div class="logo">
@@ -183,7 +175,7 @@
         </div>
         <div>
             
-            <h3 class="titulo-seccion" data-section="technologies" data-value="tools">HERRAMIENTAS</h3>
+            <h3 class="titulo__seccion" data-section="technologies" data-value="tools">HERRAMIENTAS</h3>
             <div class="contenedor-cartas">
                 <div class="cartas">
                     <div class="logo">
@@ -198,7 +190,7 @@
         </div>
         <div>
 
-            <h3 class="titulo-seccion" data-section="technologies" data-value="learning">ACTUALMENTE APRENDIENDO </h3>
+            <h3 class="titulo__seccion" data-section="technologies" data-value="learning">ACTUALMENTE APRENDIENDO </h3>
             <div class="contenedor-cartas">
                 <div class="cartas">
                     <div class="logo">
@@ -217,7 +209,7 @@
             <img src="img/fotomia2.jpg" alt="">
         </div>
         <div class="sobremi">
-            <p class="titulo-seccion" data-section="profile" data-value="about-me"> Sobre Mi</p>
+            <p class="titulo__seccion" data-section="profile" data-value="about-me"> Sobre Mi</p>
             <h2 data-section="profile" data-value="name" >Hola, mi nombre es <span> <br>
                 Dylan Fernandez</span></h2>
             <h3 data-section="profile" data-value="rol">Desarrollador Web</h3>
