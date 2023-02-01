@@ -8,7 +8,7 @@
     },
     "index":{
         "welcome": "bienvenidos",
-        "rol": "Soy <span> Dylan Fernandez,</span> Futuro Desarrollador",
+        "rol": "Soy <span class='presentacion__h2--span'> Dylan Fernandez,</span> Futuro Desarrollador",
         "description": "Un estudiante en continuo desarrollo",
         "download": "Descargar CV"
     },

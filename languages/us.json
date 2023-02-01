@@ -8,7 +8,7 @@
     },
     "index":{
         "welcome": "welcome",
-        "rol": "I'm <span> Dylan Fernandez, </span> Future Developer",
+        "rol": "I'm <span class='presentacion__h2--span'> Dylan Fernandez, </span> Future Developer",
         "description": "A student in constant development",
         "download": "Download CV"
     },

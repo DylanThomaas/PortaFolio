@@ -18,14 +18,14 @@
         <div class="index__container">
             <header>
                 <div class="header__container">
-                    <h1 class="header__container--h1">/DTF/</h1>
-                    <nav id="nav" class="">
-                        <ul id="links">
-                            <li><a href="#inicio" onclick="selection(this)" data-section="header" data-value="beginning">INICIO</a></li>
-                            <li><a href="#portfolio" onclick="selection(this)" data-section="header" data-value="portfolio">PORTAFOLIO</a></li>
-                            <li><a href="#tecnologias" onclick="selection(this)" data-section="header" data-value="technologies">TECNOLOGIAS</a></li>                           
-                            <li><a href="#sobremi" onclick="selection(this)" data-section="header" data-value="about-me">SOBRE MI</a></li>                            
-                            <li><a href="#contacto" onclick="selection(this)" data-section="header" data-value="contact">CONTACTO</a></li>
+                    <h1 class="header__h1">/DTF/</h1>
+                    <nav id="nav" class="header__nav">
+                        <ul class="header__ul" id="links">
+                            <li class="header__li"><a class="header__a" href="#inicio" onclick="selection(this)" data-section="header" data-value="beginning">INICIO</a></li>
+                            <li class="header__li"><a class="header__a" href="#portfolio" onclick="selection(this)" data-section="header" data-value="portfolio">PORTAFOLIO</a></li>
+                            <li class="header__li"><a class="header__a" href="#tecnologias" onclick="selection(this)" data-section="header" data-value="technologies">TECNOLOGIAS</a></li>                           
+                            <li class="header__li"><a class="header__a" href="#sobremi" onclick="selection(this)" data-section="header" data-value="about-me">SOBRE MI</a></li>                            
+                            <li class="header__li"><a class="header__a" href="#contacto" onclick="selection(this)" data-section="header" data-value="contact">CONTACTO</a></li>
                         </ul>
                     </nav>
                     <div id="flags" class="flags">
@@ -44,7 +44,7 @@
             </header>
             <div class="presentacion" id="inicio">
                 <p class="presentacion__bienvenida" data-section="index" data-value="welcome">Bienvenidos</p>
-                <h2 data-section="index" data-value="rol">Soy <span>Dylan Fernandez,</span> Futuro Desarrollador</h2>
+                <h2 class="presentacion__h2" data-section="index" data-value="rol">Soy <span class="presentacion__h2--span">Dylan Fernandez,</span> Futuro Desarrollador</h2>
                 <p class="presentacion__descripcion" data-section="index" data-value="description">Un estudiante en continuo desarrollo </p>
                 <a class="presentacion__a" id="download" href="./download/Fernandez Dylan cv.pdf" download="Fernandez Dylan CV.pdf" data-section="index" data-value="download">Descargar CV</a>
             </div>
@@ -53,7 +53,7 @@
 
     <!-- SEGUNDA SECCION  -->
     <section class="portafolio" id="portfolio">
-            <h3 class="titulo__seccion" data-section="projects" data-value="projects">MIS PROYECTOS</h3>
+            <h3 class="portafolio__titulo" data-section="projects" data-value="projects">MIS PROYECTOS</h3>
             <div class="portafolio__fila"> 
                 <div class="portafolio__proyecto">
                     <img class="proyecto__img" src="img/proyectos/proyecto1.png" alt="proyecto1">
@@ -158,17 +158,17 @@
     </section>
     
     <!-- TERCERA SECCION  -->
-    <section id="tecnologias">
+    <section class="tecnologias" id="tecnologias">
         <div>
             <h3 class="titulo__seccion" data-section="technologies" data-value="technologies">TECNOLOGIAS</h3>
-            <div class="contenedor-cartas">
-                <div class="cartas">
-                    <div class="logo">
-                        <img src="img/logos/html.svg" alt="html">
-                        <img src="img/logos/css.svg" alt="css">
-                        <img src="img/logos/javascript.svg" alt="javascript">
-                        <img src="img/logos/bootstrap.svg" alt="bootstrap" class="bootstrap">
-                        <img src="img/logos/mysql.svg" alt="mysql" class="sql">
+            <div class="tecnologias__contenedor">
+                <div class="tecnologias__cartas">
+                    <div class="cartas__logo">
+                        <img src="img/logos/html.svg" alt="html" class="cartas__img">
+                        <img src="img/logos/css.svg" alt="css" class="cartas__img">
+                        <img src="img/logos/javascript.svg" alt="javascript" class="cartas__img">
+                        <img src="img/logos/bootstrap.svg" alt="bootstrap" class="cartas__img">
+                        <img src="img/logos/mysql.svg" alt="mysql" class="cartas__img cartas__img--sql">
                     </div>
                 </div>
             </div>
@@ -176,14 +176,14 @@
         <div>
             
             <h3 class="titulo__seccion" data-section="technologies" data-value="tools">HERRAMIENTAS</h3>
-            <div class="contenedor-cartas">
-                <div class="cartas">
-                    <div class="logo">
-                        <img src="img/logos/wordpress.svg" alt="wordpress" class="wordpress">
-                        <img src="img/logos/github.svg" alt="github">
-                        <img src="img/logos/git.svg" alt="git">
-                        <img src="img/logos/figma.svg" alt="figma">
-                        <img src="img/logos/autocad.svg" alt="autocad">
+            <div class="tecnologias__contenedor">
+                <div class="tecnologias__cartas">
+                    <div class="cartas__logo">
+                        <img src="img/logos/wordpress.svg" alt="wordpress" class="cartas__img cartas__img--wordpress">
+                        <img src="img/logos/github.svg" alt="github" class="cartas__img">
+                        <img src="img/logos/git.svg" alt="git" class="cartas__img">
+                        <img src="img/logos/figma.svg" alt="figma" class="cartas__img">
+                        <img src="img/logos/autocad.svg" alt="autocad" class="cartas__img">
                     </div>
                 </div>
             </div>
@@ -191,39 +191,40 @@
         <div>
 
             <h3 class="titulo__seccion" data-section="technologies" data-value="learning">ACTUALMENTE APRENDIENDO </h3>
-            <div class="contenedor-cartas">
-                <div class="cartas">
-                    <div class="logo">
-                        <img src="img/logos/angular.svg" alt="angular">
-                        <img src="img/logos/react.svg" alt="react">
-                        <img src="img/logos/java.svg" alt="java" class="sql">
-                        <img src="img/logos/python.svg" alt="python" class="sql">       
+            <div class="tecnologias__contenedor">
+                <div class="tecnologias__cartas">
+                    <div class="cartas__logo">
+                        <img src="img/logos/angular.svg" alt="angular" class="cartas__img">
+                        <img src="img/logos/react.svg" alt="react" class="cartas__img">
+                        <img src="img/logos/java.svg" alt="java" class="cartas__img cartas__img--sql">
+                        <img src="img/logos/python.svg" alt="python" class="cartas__img cartas__img--sql">       
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
     <!-- CUARTA SECCION  -->
-    <section id="sobremi">
-        <div class="contenedor-foto">
-            <img src="img/fotomia2.jpg" alt="">
+    <section class="sobremi" id="sobremi">
+        <div class="sobremi__foto">
+            <img class="sobremi__img" src="img/fotomia2.jpg" alt="">
         </div>
-        <div class="sobremi">
-            <p class="titulo__seccion" data-section="profile" data-value="about-me"> Sobre Mi</p>
-            <h2 data-section="profile" data-value="name" >Hola, mi nombre es <span> <br>
+        <div class="sobremi__descripcion">
+            <p class="sobremi__titulo" data-section="profile" data-value="about-me"> Sobre Mi</p>
+            <h2 class="sobremi__h2" data-section="profile" data-value="name" >Hola, mi nombre es <span class="sobremi__h2--span"> <br>
                 Dylan Fernandez</span></h2>
-            <h3 data-section="profile" data-value="rol">Desarrollador Web</h3>
-            <p data-section="profile" data-value="description-1">Actualmente estoy estudiando la Tecnicatura en Programación y Desarrollo Web en la Universidad de La Matanza.</p>
-            <p data-section="profile" data-value="description-2">Estoy buscando mi primer trabajo en IT donde volcar mis conocimientos aprendidos. <br>También estoy desarrollando proyectos propios de formación contínua.</p> 
-            <p data-section="profile" data-value="description-3">Vibrando energía emprendedora, y enfocado en superar mis propios límites. <br>Dando siempre el máximo porque me gusta trabajar con compromiso y dedicación. </p>
+            <h3 class="sobremi__h3" data-section="profile" data-value="rol">Desarrollador Web</h3>
+            <p class="sobremi__p" data-section="profile" data-value="description-1">Actualmente estoy estudiando la Tecnicatura en Programación y Desarrollo Web en la Universidad de La Matanza.</p>
+            <p class="sobremi__p" data-section="profile" data-value="description-2">Estoy buscando mi primer trabajo en IT donde volcar mis conocimientos aprendidos. <br>También estoy desarrollando proyectos propios de formación contínua.</p> 
+            <p class="sobremi__p" data-section="profile" data-value="description-3">Vibrando energía emprendedora, y enfocado en superar mis propios límites. <br>Dando siempre el máximo porque me gusta trabajar con compromiso y dedicación. </p>
         </div>
     </section>  
-    <footer id="contacto" class="footer" >
+    <footer class="footer" id="contacto">
         <p data-section="footer" data-value="contact">Formas de contactos</p>
             <div class="footer-div">
-            <a href="https://github.com/DylanThomaas"  target="_blank"><i class="fa-brands fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/dylan-thomas-fernandez/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://wa.me/+5491169023101" target="_blank"><i class="fa-brands fa-whatsapp "></i></a>
+            <a class="footer__a"href="https://github.com/DylanThomaas"  target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a class="footer__a"href="https://www.linkedin.com/in/dylan-thomas-fernandez/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a class="footer__a"href="https://wa.me/+5491169023101" target="_blank"><i class="fa-brands fa-whatsapp "></i></a>
         </div>
     </footer>
     <script src="script.js"></script>

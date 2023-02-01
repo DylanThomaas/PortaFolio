@@ -1,3 +1,22 @@
+
+/* Fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+html{
+  scroll-behavior: smooth;
+}
+header{
+  background-color: rgba(0,0,0,.8);
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  top: 0;
+}
 /* Variables */
 :root{
     --letra-color: #ff9800;
@@ -6,32 +25,12 @@
     --gris-oscuro:#2c2c2c;
     --gris-claro:#474747;
 }
-
-
-/* Fuentes */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
-}
-html{
-    scroll-behavior: smooth;
-}
 .index{
     background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url("img/fondo/fondo1.jpg");
     background-size: cover;
     background-position: center ;
     height: 100%;
-}
-header{
-    background-color: rgba(0,0,0,.8);
-    position: fixed;
-    width: 100%;
-    z-index: 100;
-    top: 0;
-}
+  }
 .header__container{
     max-width: 1100px;
     margin: auto;
@@ -40,26 +39,25 @@ header{
     align-items: center;
     padding: 10px 20px;
 }
-.header__container--h1{
+.header__h1{
     text-align: center;
     color: var(--letra-color);
 }
-.header__container nav ul{
+.header__ul{
     list-style: none;
     display: flex;
     align-items: center;
 }
-.header__container nav ul li a{
+.header__a{
     text-decoration: none;
     color: var(--blanco-color);
     margin: 0 12px;
     font-weight: 400;
     transition: .5s;
 }
-.header__container nav ul a:hover{
+.header__a:hover{
     color: var(--letra-color);
 }
-
 .flags{
   width: 75px;
   display: flex;
@@ -74,6 +72,10 @@ header{
   cursor: pointer;
   border-radius: 5px;
 }
+.seleccionado{
+  color: var(--letra-color);
+}
+/* SECCION PRESENTACION*/
 .presentacion{
     max-width: 1100px;
     height: 100vh; 
@@ -90,23 +92,21 @@ header{
   text-transform: uppercase;
   letter-spacing: 5px;
 }
- .presentacion h2{
+.presentacion__h2{
   font-size: 40px;
   margin-bottom: 25px;
   text-align: center;
 }
-.presentacion h2 span{
+.presentacion__h2--span{
   font-size: 50px;
   color: var(--letra-color);
 }
-
 .presentacion__descripcion{
   max-width: 700px;
   margin: 25px auto;
   font-size: 25px;
   text-align: center;
 }
-
 .presentacion__a {
     text-decoration: none;
     display: inline-block;
@@ -128,13 +128,14 @@ header{
     color: var(--blanco-color);
     display: none ;
 }
+
 /* SECCION TECNOLOGIAS*/
-#tecnologias{
+.tecnologias{
     margin: auto;
     padding: 30px 15px;
     background: var(--gris-claro);
 }
-#tecnologias .titulo__seccion{
+.tecnologias .titulo__seccion{
   text-align: center;
   font-size: 22px;
   text-transform: uppercase;
@@ -144,40 +145,39 @@ header{
   text-decoration-thickness: 5px;
   margin: 1rem;
 }
-#tecnologias .contenedor-cartas{
+.tecnologias__contenedor{
   margin: 1rem;
 }
-
-#tecnologias .contenedor-cartas .cartas .logo {
+.cartas__logo {
   display: flex;
   justify-content: center;
   margin: 2rem;
 
 }
-#tecnologias .contenedor-cartas .cartas .logo img{
+.cartas__img{
   height: 5rem;
   margin: 0.5rem;
   filter: grayscale(1);
 }
-#tecnologias .contenedor-cartas .cartas .logo img:hover{
+.cartas__img:hover{
   filter: grayscale(0);
 }
-.wordpress{
+.cartas__img--wordpress{
   border-radius: 150px;
   background-color: var(--blanco-color);
 }
-.sql{
+.cartas__img--sql{
   border-radius: 10px;
   background-color: var(--blanco-color);
 }
 
-/* SECCION portafolio*/
+/* SECCION PORTAFOLIO*/
 .portafolio{
     max-width: 1100px;
     padding: 100px 0;
     margin: auto;
 }
-.portafolio .titulo__seccion{
+.portafolio__titulo{
     text-align: center;
     font-size: 22px;
     text-transform: uppercase;
@@ -209,7 +209,7 @@ header{
     transition: .5s;
 }
 .portafolio__proyecto:hover .proyecto__img{
-    filter: grayscale(0);
+    filter: grayscale(0); 
 }
 .proyecto__info{
     position: absolute;
@@ -260,27 +260,27 @@ header{
 
 /* SECCION SOBRE MI*/
 
-#sobremi{
+.sobremi{
     max-width: 1100px;
     margin: auto;
     padding: 100px 15px;
     color: var(--gris-oscuro);
     display: flex;
 }
-#sobremi .contenedor-foto{
+.sobremi__foto{
     max-width: 400px;
     margin-right: 80px;
 }
-#sobremi .contenedor-foto img{
+.sobremi__img{
     padding: 20px;
     width: 100%;
     border-radius: 10px;
     background-color: #f3f3f3; 
 }
-#sobremi .sobremi{
+.sobremi__descripcion{
     margin: 0 40px;
 }
-#sobremi .sobremi .titulo__seccion{
+.sobremi__titulo{
     font-size: 22px;
     text-transform: uppercase;
     color: var(--gris-oscuro);
@@ -288,42 +288,28 @@ header{
     text-decoration-color: #d3d3d3;
     text-decoration-thickness: 5px;
 }
-#sobremi .sobremi h2{
+.sobremi__h2{
     font-size: 34px;
     font-weight: bold;
     margin: 20px 0;
     letter-spacing: 2px;
 }
-#sobremi .sobremi h2 span{
+.sobremi__h2--span{
     color: var(--letra-color);
 }
-#sobremi .sobremi h3{
+.sobremi__h3{
     font-size: 18px;
     font-weight: 500;
     text-transform: uppercase;
     margin-bottom: 20px;
     letter-spacing: 1px;
 }
-#sobremi .sobremi p{
+.sobremi__p{
     font-size: 14px;
     line-height: 25px;
     color: #565656;
     margin-bottom: 12px;
 }
-#sobremi .sobremi a{
-    display: inline-block;
-    text-decoration: none;
-    color: #000;
-    border-radius: 30px;
-    padding: 10px 20px;
-    border: 1px solid color #000;
-    margin-top: 30px;
-    transition: .5s;
-}
-#sobremi .sobremi a{
-background-color: var(--letra-color);
-}
-
 /* FOOTER */
 .footer{
   background-color: var(--gris-claro);
@@ -331,7 +317,7 @@ background-color: var(--letra-color);
   text-align: center;
   padding: 30px 0   ;
 }
-.footer a{
+.footer__a{
     text-decoration: none;
     color: var(--blanco-color);
     display: inline-block;
@@ -344,10 +330,10 @@ background-color: var(--letra-color);
   .redes{
   display: none;
   }
-  nav{
+  .header__nav{
     display: none;
   }
-  nav.responsive{
+  .responsive{
     display: block;
     background-color: rgba(0,0,0,.8);
     width: 100%;
@@ -356,46 +342,46 @@ background-color: var(--letra-color);
     left: 0;
     padding: 10px 0;
   }
-  nav .responsive ul{
+  .header__ul{
     display: block;
     text-align: center;
     transition: 0.5s;
   }
-  nav .responsive ul li{
+  .header__li{
+    padding: 10px;
     margin: 5px 0;
     transition: 0.5s;
   }
   .icono__nav{
     display: block;
   }
-   .presentacion__bienvenida{
+  .presentacion__bienvenida{
       font-size: 16px;
       letter-spacing: 3px;
   }
-   .presentacion h2{
+  .presentacion__h2{
     font-size: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: baseline
   }
-   .presentacion h2 span{
+  .presentacion__h2--span{
     font-size: 25px;
   }
-
-   .presentacion__descripcion{
+  .presentacion__descripcion{
     font-size: 16px;
     margin: 0;
   }
-   .presentacion__a {
+  .presentacion__a {
     margin: 20px;
     padding: 10px 17px;
     font-size: 16px;
   }
-  .header__container nav ul{
+  .header__ul{
     flex-direction: column;
   }
-  .header__container h1{
+  .header__h1{
     font-size: 17px;
 }
   .seleccionado{
@@ -404,7 +390,15 @@ background-color: var(--letra-color);
   .portafolio{
     padding: 50px;
   }
-  .titulo__seccion {
+  .titulo__seccion{
+    font-size: 17px;
+    margin-bottom: 20px;
+  }
+  .portafolio__titulo{
+    font-size: 17px;
+    margin-bottom: 20px;
+  }
+  .sobremi__titulo{
     font-size: 17px;
     margin-bottom: 20px;
   }
@@ -426,34 +420,31 @@ background-color: var(--letra-color);
  .proyecto__img{
     filter: grayscale(0);
   }
-  #tecnologias .titulo__seccion{
-    font-size: 17px;
-  }
-  #tecnologias .contenedor-cartas .cartas .logo{
+  .cartas__logo{
     flex-wrap: wrap;
     margin: 1rem;
   }
-  #tecnologias .contenedor-cartas .cartas .logo img{
+  .cartas__img{
     filter: grayscale(0);
     height: 3.5rem;
   }
-  #sobremi{
+  .sobremi{
     padding: 50px 0;
     flex-wrap: wrap;
     justify-content: center;
     flex-direction: column-reverse
   }
-  #sobremi .sobremi {
+  .sobremi__descripcion{
     text-align: center;
   }
-  #sobremi .sobremi .titulo__seccion{
+  .sobremi__titulo{
     font-size: 17px;
   }
-  #sobremi .sobremi h2{
+  .sobremi__h2{
     font-size: 22px;
   }
-  #sobremi .contenedor-foto{
+  .sobremi__foto{
     margin: auto;
-    max-width: 200px;
+    max-width: 300px;
   }
 }
