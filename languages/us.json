@@ -9,7 +9,7 @@
     "index":{
         "welcome": "welcome",
         "rol": "I'm <span class='presentacion__h2--span'> Dylan Fernandez, </span> Future Developer",
-        "description": "A student in constant development",
+        "description": "A student in constant development <span class='presentacion__descripcion' id='presentacion__descripcion'></span>",
         "download": "Download CV"
     },
     "projects":{
@@ -34,7 +34,7 @@
     },
     "profile":{
         "about-me": "ABOUT ME",
-        "name": "Hello, my name is<span> <br> Dylan Fernandez</span>",
+        "name": "Hello, my name is<span class='sobremi__h2--span'> <br> Dylan Fernandez</span>",
         "rol": "WEB DEVELOPER",
         "description-1": "I am currently studying a degree in Programming and Web Development at the University of La Matanza.",
         "description-2": "I'm looking for my first job in IT where I can use the knowledge I've learned.<br> I am also developing my own projects of continuous learning.",

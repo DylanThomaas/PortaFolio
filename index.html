@@ -18,7 +18,9 @@
         <div class="index__container">
             <header>
                 <div class="header__container">
-                    <h1 class="header__h1">/DTF/</h1>
+                    <div class="header__logo">
+                        <img class="header__logo" src="./img/logo.png" alt="logo">
+                    </div>
                     <nav id="nav" class="header__nav">
                         <ul class="header__ul" id="links">
                             <li class="header__li"><a class="header__a" href="#inicio" onclick="selection(this)" data-section="header" data-value="beginning">INICIO</a></li>
@@ -45,7 +47,7 @@
             <div class="presentacion" id="inicio">
                 <p class="presentacion__bienvenida" data-section="index" data-value="welcome">Bienvenidos</p>
                 <h2 class="presentacion__h2" data-section="index" data-value="rol">Soy <span class="presentacion__h2--span">Dylan Fernandez,</span> Futuro Desarrollador</h2>
-                <p class="presentacion__descripcion" data-section="index" data-value="description">Un estudiante en continuo desarrollo </p>
+                <p class="presentacion__descripcion" data-section="index" data-value="description">Un estudiante <span class="presentacion__descripcion" id="presentacion__descripcion"></span></p>
                 <a class="presentacion__a" id="download" href="./download/Fernandez Dylan cv.pdf" download="Fernandez Dylan CV.pdf" data-section="index" data-value="download">Descargar CV</a>
             </div>
         </div>
@@ -227,7 +229,9 @@
             <a class="footer__a"href="https://wa.me/+5491169023101" target="_blank"><i class="fa-brands fa-whatsapp "></i></a>
         </div>
     </footer>
-    <script src="script.js"></script>
+
+    <script src="./js/typed.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>

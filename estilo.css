@@ -26,9 +26,10 @@ header{
     --gris-claro:#474747;
 }
 .index{
-    background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url("img/fondo/fondo1.jpg");
+    background: center fixed linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url("img/fondo/fondo1.jpg");
     background-size: cover;
     background-position: center ;
+    background-attachment: fixed;
     height: 100%;
   }
 .header__container{
@@ -38,6 +39,10 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
+}
+.header__logo{
+  max-width: 3rem;
+  margin: -4  px;
 }
 .header__h1{
     text-align: center;
@@ -106,6 +111,19 @@ header{
   margin: 25px auto;
   font-size: 25px;
   text-align: center;
+
+  /* white-space: nowrap;
+  animation: typing 2s steps(29), blink .5s infinite step-end alternate ;
+  overflow: hidden;
+  width: 29ch;
+  border-right: 4px solid; */
+}
+
+@keyframes typing {
+  from{ width: 0;}
+}
+@keyframes blink {
+  60%{border-color: transparent;}
 }
 .presentacion__a {
     text-decoration: none;
@@ -338,7 +356,7 @@ header{
     background-color: rgba(0,0,0,.8);
     width: 100%;
     position: absolute;
-    top: 43px;
+    top: 72px;
     left: 0;
     padding: 10px 0;
   }
@@ -346,12 +364,16 @@ header{
     display: block;
     text-align: center;
     transition: 0.5s;
+    flex-direction: column;
   }
   .header__li{
     padding: 10px;
     margin: 5px 0;
     transition: 0.5s;
   }
+  .header__h1{
+    font-size: 17px;
+}
   .icono__nav{
     display: block;
   }
@@ -378,12 +400,6 @@ header{
     padding: 10px 17px;
     font-size: 16px;
   }
-  .header__ul{
-    flex-direction: column;
-  }
-  .header__h1{
-    font-size: 17px;
-}
   .seleccionado{
     color: var(--letra-color);
   }
