@@ -77,9 +77,9 @@ flagsElement.addEventListener("click",(e)=>{
 
     const typed = new Typed('#presentacion__descripcion', {
         strings: [
-            'autidacta !',
-            'en continuo desarrollo !',
-            'con ansias de nuevos desafios !'],
+            'autidacta.',
+            'en continuo desarrollo.',
+            'con ansias de nuevos desafios.'],
     
         typeSpeed: 75,
         starDelay: 300,
@@ -102,7 +102,7 @@ function mostrarScroll(){
     let scrollTop = document.documentElement.scrollTop;
     for(var i=0; i < animado.length; i++){
         let alturaAnimado = animado[i].offsetTop;
-        if(alturaAnimado - 600 < scrollTop){
+        if(alturaAnimado - 650 < scrollTop){
         animado[i].style.opacity = 1;
         animado[i].classList.add("mostrar__arriba");
         }
