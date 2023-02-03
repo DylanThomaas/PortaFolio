@@ -79,7 +79,7 @@ flagsElement.addEventListener("click",(e)=>{
         strings: [
             'autidacta !',
             'en continuo desarrollo !',
-            'con ancias de nuevos desafios !'],
+            'con ansias de nuevos desafios !'],
     
         typeSpeed: 75,
         starDelay: 300,
@@ -92,3 +92,21 @@ flagsElement.addEventListener("click",(e)=>{
         cursorChar: '|',
         contentType: 'html', 
     });
+
+    
+//Funcion para el efecto scroll
+
+let animado = document.querySelectorAll(".animado");
+
+function mostrarScroll(){
+    let scrollTop = document.documentElement.scrollTop;
+    for(var i=0; i < animado.length; i++){
+        let alturaAnimado = animado[i].offsetTop;
+        if(alturaAnimado - 500 < scrollTop){
+        animado[i].style.opacity = 1;
+        animado[i].classList.add("mostrar__arriba");
+        }
+    }
+}
+
+window.addEventListener('scroll',mostrarScroll);
