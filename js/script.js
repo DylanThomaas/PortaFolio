@@ -53,28 +53,7 @@ flagsElement.addEventListener("click",(e)=>{
     
 });
 
-
-//Funcion para descargar cv
-
-// const cvLanguage = document.getElementById("download");
-
-
-// function cv (){
-//     if((cvLanguage.textContent=="Descargar CV")){
-//         console.log("entro")
-//         cv.cvLanguage.apend
-//     }else{
-//         console.log("no entro")
-//     }
-// };
-
-// cvLanguage.addEventListener("click",(cvLanguage)=>{
-//     //cv();
-//     console.log(cvLanguage.target.dataset.href)
-// });
-
 //Funcion para el efecto typed
-
     const typed = new Typed('#presentacion__descripcion', {
         strings: [
             'autidacta.',
@@ -95,7 +74,6 @@ flagsElement.addEventListener("click",(e)=>{
 
     
 //Funcion para el efecto scroll
-
 let animado = document.querySelectorAll(".animado");
 
 function mostrarScroll(){
@@ -110,3 +88,4 @@ function mostrarScroll(){
 }
 
 window.addEventListener('scroll',mostrarScroll);
+
