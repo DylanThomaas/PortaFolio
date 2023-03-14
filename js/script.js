@@ -71,8 +71,7 @@ flagsElement.addEventListener("click",(e)=>{
         cursorChar: '|',
         contentType: 'html', 
     });
-
-    
+ 
 //Funcion para el efecto scroll
 let animado = document.querySelectorAll(".animado");
 
@@ -80,7 +79,7 @@ function mostrarScroll(){
     let scrollTop = document.documentElement.scrollTop;
     for(var i=0; i < animado.length; i++){
         let alturaAnimado = animado[i].offsetTop;
-        if(alturaAnimado - 500 < scrollTop){
+        if(alturaAnimado - 650 < scrollTop){
         animado[i].style.opacity = 1;
         animado[i].classList.add("mostrar__arriba");
         }
